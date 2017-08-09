@@ -10,7 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Routing\Controller;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'ProdutoController@lista');
+
+
